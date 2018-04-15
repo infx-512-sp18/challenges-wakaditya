@@ -1,0 +1,100 @@
+
+header {
+    /* DECLARING THE BACKGROUND IMAGE*/
+    background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
+    background-size: cover;
+    padding-top: 7px;
+    padding-bottom: 100px; 
+    color: #FFFFFF;
+}
+
+html {
+    /* HERE WE DECLARE THE DEFAULT FONT*/
+    font-family: "Nunito Sans";
+    font-size: 16px;
+}
+h1, h2 {
+    /* THESE ARE THE HEADER STYLES WITH THE RALEWAY FONT*/
+    font-family: Raleway;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+h1 {
+    /* 500% LARGE HEADING 1 */
+    font-size: 5rem;
+    line-height: 1em;
+}
+h2 {
+    /* 250% LARGE HEADING 1 */
+    font-size: 2.5rem;
+}
+
+/* for class = motto */
+.motto{
+    /* Italic motto */
+    font-size: 1.5rem;
+    font-style: italic;
+    /* making sure the text is smaller than the rest of the header */
+    margin: 10px;
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+#menu {
+    background-color: #F0F0F0;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+#menu dt {
+    /* descriptive list title for the menu */
+    font-weight: bold;
+}
+#menu dd {
+     /* descriptive list data for the menu */
+    text-indent: -40px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+main {
+    background-color: #E0E0E0;
+    /* line height for about */
+    line-height: 1.5;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+main img {
+    /* coffee cup image */
+    float: right;
+    width: 300px;
+    padding: 30px;
+}
+footer {
+
+    background-color: #3E1305;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+svg {
+    fill: #FFFFFF;
+    /* width larger than default font size by 1.8 rem */
+    width: 1.8rem;
+    margin-right: 1em;
+    transition: color;
+}
+svg:hover {
+    /* color change on hover */
+    fill: #D0D0D0;
+}
+
+
+/* add the style at the bottom to get rid of blue underline under the icons */
+a:link {
+    text-decoration: none;
+}
