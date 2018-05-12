@@ -25,7 +25,7 @@ var usr_nam_out = document.getElementById("name-output");
 
 
 // Receiving the style which the user selected to animate the displayed text (drop down list option)
-var style = document.getElementById("animation-select").value;
+var style_add = document.getElementById("animation-select").value;
 
 // Option to hold the animate button
 var click_animate = document.getElementById("animate");
@@ -39,10 +39,10 @@ click_animate.addEventListener("click", function() {
 // Writing the animation function
 
 //add the selected style to the object to be animated
-    object_to_animate.classList.add(style);
+    object_to_animate.classList.add(style_add);
 
     // Removing animated style for allowing to add another AFTER ANIMATING IT ONCE HAD ENDED
     object_to_animate.addEventListener("animationend", function() {
-        object_to_animate.classList.remove(style);
+        object_to_animate.classList.remove(style_add);
      }, {once: true});
 });
