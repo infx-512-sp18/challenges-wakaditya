@@ -4,7 +4,7 @@ var usr_nam_in = document.getElementById("name-input");
 var usr_nam_out = document.getElementById("name-output");
 
 usr_nam_in.addEventListener("input", function(){
-    usr_nam_out.innerText = NameInput.value;
+    usr_nam_out.innerText = usr_nam_in.value;
 });
 
 
