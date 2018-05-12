@@ -10,7 +10,6 @@ usr_nam_in.addEventListener("input", function(){
 
 // id = 'animation-select' it holds the value which is to be animated
 var object_to_animate = document.getElementById("welcome");
-
 // What to do when the animate button is clicked
 var click_animate = document.getElementById("animate");
 
