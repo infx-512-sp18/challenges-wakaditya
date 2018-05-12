@@ -41,8 +41,8 @@ click_animate.addEventListener("click", function() {
 //add the selected style to the object to be animated
     object_to_animate.classList.add(style);
 
-    // Removing animated after one click
-    //object_to_animate.addEventListener("animationend", function() {
-      //  object_to_animate.classList.remove(style);
-    //}, {once: true});
+    // Removing animated style for allowing to add another AFTER ANIMATING IT ONCE HAD ENDED
+    object_to_animate.addEventListener("animationend", function() {
+        object_to_animate.classList.remove(style);
+     }, {once: true});
 });
