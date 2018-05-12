@@ -23,10 +23,6 @@ var usr_nam_out = document.getElementById("name-output");
 
 // Part 2: Animation options for animating the displayed text from Part 1
 
-
-// Receiving the style which the user selected to animate the displayed text (drop down list option)
-var style_add = document.getElementById("animation-select").value;
-
 // Option to hold the animate button
 var click_animate = document.getElementById("animate");
 
@@ -37,7 +33,8 @@ var object_to_animate = document.getElementById("welcome");
 // EVENT LISTENER: What happens when you click the animate button
 click_animate.addEventListener("click", function() {
 // Writing the animation function
-
+// Receiving the style which the user selected to animate the displayed text (drop down list option)
+var style_add = document.getElementById("animation-select").value;
 //add the selected style to the object to be animated
     object_to_animate.classList.add(style_add);
 
